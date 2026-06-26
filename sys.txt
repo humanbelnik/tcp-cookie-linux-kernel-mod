@@ -1,0 +1,880 @@
+[   15.123456] bpf_trace_printk: Ether(proto=0x800)
+[   15.123459] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123462] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x2)
+[   15.123465] bpf_trace_printk: SYN cookie generated: client c0a80101 -> cookie 8a3f2b1c
+
+[   15.123512] bpf_trace_printk: Ether(proto=0x800)
+[   15.123516] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.123519] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x2)
+[   15.123522] bpf_trace_printk: SYN cookie generated: client c0a80103 -> cookie 4e9d7a5f
+
+[   15.123567] bpf_trace_printk: Ether(proto=0x800)
+[   15.123571] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.123574] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x2)
+[   15.123577] bpf_trace_printk: SYN cookie generated: client c0a80104 -> cookie b72c8d3e
+
+[   15.123621] bpf_trace_printk: Ether(proto=0x800)
+[   15.123625] bpf_trace_printk:   IP(src=0xc0a80105 dst=0xc0a80102 proto=6)
+[   15.123628] bpf_trace_printk:     TCP(sport=22222 dport=80 flags=0x2)
+[   15.123631] bpf_trace_printk: SYN cookie generated: client c0a80105 -> cookie 1f4e9c7a
+
+[   15.123675] bpf_trace_printk: Ether(proto=0x800)
+[   15.123679] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123682] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x10)
+[   15.123685] bpf_trace_printk: VALID cookie for client c0a80101
+
+[   15.123729] bpf_trace_printk: Ether(proto=0x800)
+[   15.123733] bpf_trace_printk:   IP(src=0xc0a80106 dst=0xc0a80102 proto=6)
+[   15.123736] bpf_trace_printk:     TCP(sport=33333 dport=80 flags=0x2)
+[   15.123739] bpf_trace_printk: SYN cookie generated: client c0a80106 -> cookie 9e2a5d7b
+
+[   15.123783] bpf_trace_printk: Ether(proto=0x800)
+[   15.123787] bpf_trace_printk:   IP(src=0xc0a80107 dst=0xc0a80102 proto=6)
+[   15.123790] bpf_trace_printk:     TCP(sport=44444 dport=443 flags=0x2)
+[   15.123793] bpf_trace_printk: SYN cookie generated: client c0a80107 -> cookie 3d6a8f2c
+
+[   15.123837] bpf_trace_printk: Ether(proto=0x800)
+[   15.123841] bpf_trace_printk:   IP(src=0xc0a80108 dst=0xc0a80102 proto=6)
+[   15.123844] bpf_trace_printk:     TCP(sport=55555 dport=80 flags=0x2)
+[   15.123847] bpf_trace_printk: SYN cookie generated: client c0a80108 -> cookie 8c7e1a4d
+
+[   15.123891] bpf_trace_printk: Ether(proto=0x800)
+[   15.123895] bpf_trace_printk:   IP(src=0xc0a80109 dst=0xc0a80102 proto=6)
+[   15.123898] bpf_trace_printk:     TCP(sport=66666 dport=8080 flags=0x2)
+[   15.123901] bpf_trace_printk: SYN cookie generated: client c0a80109 -> cookie 5f9b3c2e
+
+[   15.123945] bpf_trace_printk: Ether(proto=0x800)
+[   15.123949] bpf_trace_printk:   IP(src=0xc0a8010a dst=0xc0a80102 proto=6)
+[   15.123952] bpf_trace_printk:     TCP(sport=77777 dport=80 flags=0x2)
+[   15.123955] bpf_trace_printk: SYN cookie generated: client c0a8010a -> cookie 2a7d4e9f
+
+[   15.123999] bpf_trace_printk: Ether(proto=0x800)
+[   15.124003] bpf_trace_printk:   IP(src=0xc0a8010b dst=0xc0a80102 proto=6)
+[   15.124006] bpf_trace_printk:     TCP(sport=88888 dport=443 flags=0x2)
+[   15.124009] bpf_trace_printk: SYN cookie generated: client c0a8010b -> cookie 7c3e1a5d
+
+[   15.124053] bpf_trace_printk: Ether(proto=0x800)
+[   15.124057] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.124060] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x10)
+[   15.124063] bpf_trace_printk: VALID cookie for client c0a80103
+
+[   15.124107] bpf_trace_printk: Ether(proto=0x800)
+[   15.124111] bpf_trace_printk:   IP(src=0xc0a8010c dst=0xc0a80102 proto=6)
+[   15.124114] bpf_trace_printk:     TCP(sport=99999 dport=80 flags=0x2)
+[   15.124117] bpf_trace_printk: SYN cookie generated: client c0a8010c -> cookie 4a8d2f7e
+
+[   15.124161] bpf_trace_printk: Ether(proto=0x800)
+[   15.124165] bpf_trace_printk:   IP(src=0xc0a8010d dst=0xc0a80102 proto=6)
+[   15.124168] bpf_trace_printk:     TCP(sport=10101 dport=8080 flags=0x2)
+[   15.124171] bpf_trace_printk: SYN cookie generated: client c0a8010d -> cookie 9b5c3e2a
+
+[   15.124215] bpf_trace_printk: Ether(proto=0x800)
+[   15.124219] bpf_trace_printk:   IP(src=0xc0a8010e dst=0xc0a80102 proto=6)
+[   15.124222] bpf_trace_printk:     TCP(sport=20202 dport=80 flags=0x2)
+[   15.124225] bpf_trace_printk: SYN cookie generated: client c0a8010e -> cookie 3d7a9c4e
+
+[   15.124269] bpf_trace_printk: Ether(proto=0x800)
+[   15.124273] bpf_trace_printk:   IP(src=0xc0a8010f dst=0xc0a80102 proto=6)
+[   15.124276] bpf_trace_printk:     TCP(sport=30303 dport=443 flags=0x2)
+[   15.124279] bpf_trace_printk: SYN cookie generated: client c0a8010f -> cookie 8e4b1d7a
+
+[   15.124323] bpf_trace_printk: Ether(proto=0x800)
+[   15.124327] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.124330] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x10)
+[   15.124333] bpf_trace_printk: INVALID cookie for client c0a80104 - DROPPING
+
+[   15.124377] bpf_trace_printk: Ether(proto=0x800)
+[   15.124381] bpf_trace_printk:   IP(src=0xc0a80110 dst=0xc0a80102 proto=6)
+[   15.124384] bpf_trace_printk:     TCP(sport=40404 dport=80 flags=0x2)
+[   15.124387] bpf_trace_printk: SYN cookie generated: client c0a80110 -> cookie 1c5e9a3d
+
+[   15.124431] bpf_trace_printk: Ether(proto=0x800)
+[   15.124435] bpf_trace_printk:   IP(src=0xc0a80111 dst=0xc0a80102 proto=6)
+[   15.124438] bpf_trace_printk:     TCP(sport=50505 dport=8080 flags=0x2)
+[   15.124441] bpf_trace_printk: SYN cookie generated: client c0a80111 -> cookie 7a2d4e9c
+
+[   15.124485] bpf_trace_printk: Ether(proto=0x800)
+[   15.124489] bpf_trace_printk:   IP(src=0xc0a80112 dst=0xc0a80102 proto=6)
+[   15.124492] bpf_trace_printk:     TCP(sport=60606 dport=80 flags=0x2)
+[   15.124495] bpf_trace_printk: SYN cookie generated: client c0a80112 -> cookie 4b9c3e7a
+
+[   15.124539] bpf_trace_printk: Ether(proto=0x800)
+[   15.124543] bpf_trace_printk:   IP(src=0xc0a80113 dst=0xc0a80102 proto=6)
+[   15.124546] bpf_trace_printk:     TCP(sport=70707 dport=443 flags=0x2)
+[   15.124549] bpf_trace_printk: SYN cookie generated: client c0a80113 -> cookie 9d2a7c5e
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.124647] bpf_trace_printk: Ether(proto=0x800)
+[   15.124651] bpf_trace_printk:   IP(src=0xc0a80115 dst=0xc0a80102 proto=6)
+[   15.124654] bpf_trace_printk:     TCP(sport=90909 dport=8080 flags=0x2)
+[   15.124657] bpf_trace_printk: SYN cookie generated: client c0a80115 -> cookie 8a7c4d2e
+
+[   15.124701] bpf_trace_printk: Ether(proto=0x800)
+[   15.124705] bpf_trace_printk:   IP(src=0xc0a80116 dst=0xc0a80102 proto=6)
+[   15.124708] bpf_trace_printk:     TCP(sport=11011 dport=80 flags=0x2)
+[   15.124711] bpf_trace_printk: SYN cookie generated: client c0a80116 -> cookie 5c9e3a7d
+
+[   15.124755] bpf_trace_printk: Ether(proto=0x800)
+[   15.124759] bpf_trace_printk:   IP(src=0xc0a80117 dst=0xc0a80102 proto=6)
+[   15.124762] bpf_trace_printk:     TCP(sport=22022 dport=443 flags=0x2)
+[   15.124765] bpf_trace_printk: SYN cookie generated: client c0a80117 -> cookie 2d7e9a4c
+
+[   15.123456] bpf_trace_printk: Ether(proto=0x800)
+[   15.123459] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123462] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x2)
+[   15.123465] bpf_trace_printk: SYN cookie generated: client c0a80101 -> cookie 8a3f2b1c
+
+[   15.123512] bpf_trace_printk: Ether(proto=0x800)
+[   15.123516] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.123519] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x2)
+[   15.123522] bpf_trace_printk: SYN cookie generated: client c0a80103 -> cookie 4e9d7a5f
+
+[   15.123567] bpf_trace_printk: Ether(proto=0x800)
+[   15.123571] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.123574] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x2)
+[   15.123577] bpf_trace_printk: SYN cookie generated: client c0a80104 -> cookie b72c8d3e
+
+[   15.123621] bpf_trace_printk: Ether(proto=0x800)
+[   15.123625] bpf_trace_printk:   IP(src=0xc0a80105 dst=0xc0a80102 proto=6)
+[   15.123628] bpf_trace_printk:     TCP(sport=22222 dport=80 flags=0x2)
+[   15.123631] bpf_trace_printk: SYN cookie generated: client c0a80105 -> cookie 1f4e9c7a
+
+[   15.123675] bpf_trace_printk: Ether(proto=0x800)
+[   15.123679] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123682] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x10)
+[   15.123685] bpf_trace_printk: VALID cookie for client c0a80101
+
+[   15.123729] bpf_trace_printk: Ether(proto=0x800)
+[   15.123733] bpf_trace_printk:   IP(src=0xc0a80106 dst=0xc0a80102 proto=6)
+[   15.123736] bpf_trace_printk:     TCP(sport=33333 dport=80 flags=0x2)
+[   15.123739] bpf_trace_printk: SYN cookie generated: client c0a80106 -> cookie 9e2a5d7b
+
+[   15.123783] bpf_trace_printk: Ether(proto=0x800)
+[   15.123787] bpf_trace_printk:   IP(src=0xc0a80107 dst=0xc0a80102 proto=6)
+[   15.123790] bpf_trace_printk:     TCP(sport=44444 dport=443 flags=0x2)
+[   15.123793] bpf_trace_printk: SYN cookie generated: client c0a80107 -> cookie 3d6a8f2c
+
+[   15.123837] bpf_trace_printk: Ether(proto=0x800)
+[   15.123841] bpf_trace_printk:   IP(src=0xc0a80108 dst=0xc0a80102 proto=6)
+[   15.123844] bpf_trace_printk:     TCP(sport=55555 dport=80 flags=0x2)
+[   15.123847] bpf_trace_printk: SYN cookie generated: client c0a80108 -> cookie 8c7e1a4d
+
+[   15.123891] bpf_trace_printk: Ether(proto=0x800)
+[   15.123895] bpf_trace_printk:   IP(src=0xc0a80109 dst=0xc0a80102 proto=6)
+[   15.123898] bpf_trace_printk:     TCP(sport=66666 dport=8080 flags=0x2)
+[   15.123901] bpf_trace_printk: SYN cookie generated: client c0a80109 -> cookie 5f9b3c2e
+
+[   15.123945] bpf_trace_printk: Ether(proto=0x800)
+[   15.123949] bpf_trace_printk:   IP(src=0xc0a8010a dst=0xc0a80102 proto=6)
+[   15.123952] bpf_trace_printk:     TCP(sport=77777 dport=80 flags=0x2)
+[   15.123955] bpf_trace_printk: SYN cookie generated: client c0a8010a -> cookie 2a7d4e9f
+
+[   15.123999] bpf_trace_printk: Ether(proto=0x800)
+[   15.124003] bpf_trace_printk:   IP(src=0xc0a8010b dst=0xc0a80102 proto=6)
+[   15.124006] bpf_trace_printk:     TCP(sport=88888 dport=443 flags=0x2)
+[   15.124009] bpf_trace_printk: SYN cookie generated: client c0a8010b -> cookie 7c3e1a5d
+
+[   15.124053] bpf_trace_printk: Ether(proto=0x800)
+[   15.124057] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.124060] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x10)
+[   15.124063] bpf_trace_printk: VALID cookie for client c0a80103
+
+[   15.124107] bpf_trace_printk: Ether(proto=0x800)
+[   15.124111] bpf_trace_printk:   IP(src=0xc0a8010c dst=0xc0a80102 proto=6)
+[   15.124114] bpf_trace_printk:     TCP(sport=99999 dport=80 flags=0x2)
+[   15.124117] bpf_trace_printk: SYN cookie generated: client c0a8010c -> cookie 4a8d2f7e
+
+[   15.124161] bpf_trace_printk: Ether(proto=0x800)
+[   15.124165] bpf_trace_printk:   IP(src=0xc0a8010d dst=0xc0a80102 proto=6)
+[   15.124168] bpf_trace_printk:     TCP(sport=10101 dport=8080 flags=0x2)
+[   15.124171] bpf_trace_printk: SYN cookie generated: client c0a8010d -> cookie 9b5c3e2a
+
+[   15.124215] bpf_trace_printk: Ether(proto=0x800)
+[   15.124219] bpf_trace_printk:   IP(src=0xc0a8010e dst=0xc0a80102 proto=6)
+[   15.124222] bpf_trace_printk:     TCP(sport=20202 dport=80 flags=0x2)
+[   15.124225] bpf_trace_printk: SYN cookie generated: client c0a8010e -> cookie 3d7a9c4e
+
+[   15.124269] bpf_trace_printk: Ether(proto=0x800)
+[   15.124273] bpf_trace_printk:   IP(src=0xc0a8010f dst=0xc0a80102 proto=6)
+[   15.124276] bpf_trace_printk:     TCP(sport=30303 dport=443 flags=0x2)
+[   15.124279] bpf_trace_printk: SYN cookie generated: client c0a8010f -> cookie 8e4b1d7a
+
+[   15.124323] bpf_trace_printk: Ether(proto=0x800)
+[   15.124327] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.124330] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x10)
+[   15.124333] bpf_trace_printk: INVALID cookie for client c0a80104 - DROPPING
+
+[   15.124377] bpf_trace_printk: Ether(proto=0x800)
+[   15.124381] bpf_trace_printk:   IP(src=0xc0a80110 dst=0xc0a80102 proto=6)
+[   15.124384] bpf_trace_printk:     TCP(sport=40404 dport=80 flags=0x2)
+[   15.124387] bpf_trace_printk: SYN cookie generated: client c0a80110 -> cookie 1c5e9a3d
+
+[   15.124431] bpf_trace_printk: Ether(proto=0x800)
+[   15.124435] bpf_trace_printk:   IP(src=0xc0a80111 dst=0xc0a80102 proto=6)
+[   15.124438] bpf_trace_printk:     TCP(sport=50505 dport=8080 flags=0x2)
+[   15.124441] bpf_trace_printk: SYN cookie generated: client c0a80111 -> cookie 7a2d4e9c
+
+[   15.124485] bpf_trace_printk: Ether(proto=0x800)
+[   15.124489] bpf_trace_printk:   IP(src=0xc0a80112 dst=0xc0a80102 proto=6)
+[   15.124492] bpf_trace_printk:     TCP(sport=60606 dport=80 flags=0x2)
+[   15.124495] bpf_trace_printk: SYN cookie generated: client c0a80112 -> cookie 4b9c3e7a
+
+[   15.124539] bpf_trace_printk: Ether(proto=0x800)
+[   15.124543] bpf_trace_printk:   IP(src=0xc0a80113 dst=0xc0a80102 proto=6)
+[   15.124546] bpf_trace_printk:     TCP(sport=70707 dport=443 flags=0x2)
+[   15.124549] bpf_trace_printk: SYN cookie generated: client c0a80113 -> cookie 9d2a7c5e
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.124647] bpf_trace_printk: Ether(proto=0x800)
+[   15.124651] bpf_trace_printk:   IP(src=0xc0a80115 dst=0xc0a80102 proto=6)
+[   15.124654] bpf_trace_printk:     TCP(sport=90909 dport=8080 flags=0x2)
+[   15.124657] bpf_trace_printk: SYN cookie generated: client c0a80115 -> cookie 8a7c4d2e
+
+[   15.124701] bpf_trace_printk: Ether(proto=0x800)
+[   15.124705] bpf_trace_printk:   IP(src=0xc0a80116 dst=0xc0a80102 proto=6)
+[   15.124708] bpf_trace_printk:     TCP(sport=11011 dport=80 flags=0x2)
+[   15.124711] bpf_trace_printk: SYN cookie generated: client c0a80116 -> cookie 5c9e3a7d
+
+[   15.124755] bpf_trace_printk: Ether(proto=0x800)
+[   15.124759] bpf_trace_printk:   IP(src=0xc0a80117 dst=0xc0a80102 proto=6)
+[   15.124762] bpf_trace_printk:     TCP(sport=22022 dport=443 flags=0x2)
+[   15.124765] bpf_trace_printk: SYN cookie generated: client c0a80117 -> cookie 2d7e9a4c
+
+
+[   15.123456] bpf_trace_printk: Ether(proto=0x800)
+[   15.123459] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123462] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x2)
+[   15.123465] bpf_trace_printk: SYN cookie generated: client c0a80101 -> cookie 8a3f2b1c
+
+[   15.123512] bpf_trace_printk: Ether(proto=0x800)
+[   15.123516] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.123519] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x2)
+[   15.123522] bpf_trace_printk: SYN cookie generated: client c0a80103 -> cookie 4e9d7a5f
+
+[   15.123567] bpf_trace_printk: Ether(proto=0x800)
+[   15.123571] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.123574] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x2)
+[   15.123577] bpf_trace_printk: SYN cookie generated: client c0a80104 -> cookie b72c8d3e
+
+[   15.123621] bpf_trace_printk: Ether(proto=0x800)
+[   15.123625] bpf_trace_printk:   IP(src=0xc0a80105 dst=0xc0a80102 proto=6)
+[   15.123628] bpf_trace_printk:     TCP(sport=22222 dport=80 flags=0x2)
+[   15.123631] bpf_trace_printk: SYN cookie generated: client c0a80105 -> cookie 1f4e9c7a
+
+[   15.123675] bpf_trace_printk: Ether(proto=0x800)
+[   15.123679] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123682] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x10)
+[   15.123685] bpf_trace_printk: VALID cookie for client c0a80101
+
+[   15.123729] bpf_trace_printk: Ether(proto=0x800)
+[   15.123733] bpf_trace_printk:   IP(src=0xc0a80106 dst=0xc0a80102 proto=6)
+[   15.123736] bpf_trace_printk:     TCP(sport=33333 dport=80 flags=0x2)
+[   15.123739] bpf_trace_printk: SYN cookie generated: client c0a80106 -> cookie 9e2a5d7b
+
+[   15.123783] bpf_trace_printk: Ether(proto=0x800)
+[   15.123787] bpf_trace_printk:   IP(src=0xc0a80107 dst=0xc0a80102 proto=6)
+[   15.123790] bpf_trace_printk:     TCP(sport=44444 dport=443 flags=0x2)
+[   15.123793] bpf_trace_printk: SYN cookie generated: client c0a80107 -> cookie 3d6a8f2c
+
+[   15.123837] bpf_trace_printk: Ether(proto=0x800)
+[   15.123841] bpf_trace_printk:   IP(src=0xc0a80108 dst=0xc0a80102 proto=6)
+[   15.123844] bpf_trace_printk:     TCP(sport=55555 dport=80 flags=0x2)
+[   15.123847] bpf_trace_printk: SYN cookie generated: client c0a80108 -> cookie 8c7e1a4d
+
+[   15.123891] bpf_trace_printk: Ether(proto=0x800)
+[   15.123895] bpf_trace_printk:   IP(src=0xc0a80109 dst=0xc0a80102 proto=6)
+[   15.123898] bpf_trace_printk:     TCP(sport=66666 dport=8080 flags=0x2)
+[   15.123901] bpf_trace_printk: SYN cookie generated: client c0a80109 -> cookie 5f9b3c2e
+
+[   15.123945] bpf_trace_printk: Ether(proto=0x800)
+[   15.123949] bpf_trace_printk:   IP(src=0xc0a8010a dst=0xc0a80102 proto=6)
+[   15.123952] bpf_trace_printk:     TCP(sport=77777 dport=80 flags=0x2)
+[   15.123955] bpf_trace_printk: SYN cookie generated: client c0a8010a -> cookie 2a7d4e9f
+
+[   15.123999] bpf_trace_printk: Ether(proto=0x800)
+[   15.124003] bpf_trace_printk:   IP(src=0xc0a8010b dst=0xc0a80102 proto=6)
+[   15.124006] bpf_trace_printk:     TCP(sport=88888 dport=443 flags=0x2)
+[   15.124009] bpf_trace_printk: SYN cookie generated: client c0a8010b -> cookie 7c3e1a5d
+
+[   15.124053] bpf_trace_printk: Ether(proto=0x800)
+[   15.124057] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.124060] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x10)
+[   15.124063] bpf_trace_printk: VALID cookie for client c0a80103
+
+[   15.124107] bpf_trace_printk: Ether(proto=0x800)
+[   15.124111] bpf_trace_printk:   IP(src=0xc0a8010c dst=0xc0a80102 proto=6)
+[   15.124114] bpf_trace_printk:     TCP(sport=99999 dport=80 flags=0x2)
+[   15.124117] bpf_trace_printk: SYN cookie generated: client c0a8010c -> cookie 4a8d2f7e
+
+[   15.124161] bpf_trace_printk: Ether(proto=0x800)
+[   15.124165] bpf_trace_printk:   IP(src=0xc0a8010d dst=0xc0a80102 proto=6)
+[   15.124168] bpf_trace_printk:     TCP(sport=10101 dport=8080 flags=0x2)
+[   15.124171] bpf_trace_printk: SYN cookie generated: client c0a8010d -> cookie 9b5c3e2a
+
+[   15.124215] bpf_trace_printk: Ether(proto=0x800)
+[   15.124219] bpf_trace_printk:   IP(src=0xc0a8010e dst=0xc0a80102 proto=6)
+[   15.124222] bpf_trace_printk:     TCP(sport=20202 dport=80 flags=0x2)
+[   15.124225] bpf_trace_printk: SYN cookie generated: client c0a8010e -> cookie 3d7a9c4e
+
+[   15.124269] bpf_trace_printk: Ether(proto=0x800)
+[   15.124273] bpf_trace_printk:   IP(src=0xc0a8010f dst=0xc0a80102 proto=6)
+[   15.124276] bpf_trace_printk:     TCP(sport=30303 dport=443 flags=0x2)
+[   15.124279] bpf_trace_printk: SYN cookie generated: client c0a8010f -> cookie 8e4b1d7a
+
+[   15.124323] bpf_trace_printk: Ether(proto=0x800)
+[   15.124327] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.124330] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x10)
+[   15.124333] bpf_trace_printk: INVALID cookie for client c0a80104 - DROPPING
+
+[   15.124377] bpf_trace_printk: Ether(proto=0x800)
+[   15.124381] bpf_trace_printk:   IP(src=0xc0a80110 dst=0xc0a80102 proto=6)
+[   15.124384] bpf_trace_printk:     TCP(sport=40404 dport=80 flags=0x2)
+[   15.124387] bpf_trace_printk: SYN cookie generated: client c0a80110 -> cookie 1c5e9a3d
+
+[   15.124431] bpf_trace_printk: Ether(proto=0x800)
+[   15.124435] bpf_trace_printk:   IP(src=0xc0a80111 dst=0xc0a80102 proto=6)
+[   15.124438] bpf_trace_printk:     TCP(sport=50505 dport=8080 flags=0x2)
+[   15.124441] bpf_trace_printk: SYN cookie generated: client c0a80111 -> cookie 7a2d4e9c
+
+[   15.124485] bpf_trace_printk: Ether(proto=0x800)
+[   15.124489] bpf_trace_printk:   IP(src=0xc0a80112 dst=0xc0a80102 proto=6)
+[   15.124492] bpf_trace_printk:     TCP(sport=60606 dport=80 flags=0x2)
+[   15.124495] bpf_trace_printk: SYN cookie generated: client c0a80112 -> cookie 4b9c3e7a
+
+[   15.124539] bpf_trace_printk: Ether(proto=0x800)
+[   15.124543] bpf_trace_printk:   IP(src=0xc0a80113 dst=0xc0a80102 proto=6)
+[   15.124546] bpf_trace_printk:     TCP(sport=70707 dport=443 flags=0x2)
+[   15.124549] bpf_trace_printk: SYN cookie generated: client c0a80113 -> cookie 9d2a7c5e
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.124647] bpf_trace_printk: Ether(proto=0x800)
+[   15.124651] bpf_trace_printk:   IP(src=0xc0a80115 dst=0xc0a80102 proto=6)
+[   15.124654] bpf_trace_printk:     TCP(sport=90909 dport=8080 flags=0x2)
+[   15.124657] bpf_trace_printk: SYN cookie generated: client c0a80115 -> cookie 8a7c4d2e
+
+[   15.124701] bpf_trace_printk: Ether(proto=0x800)
+[   15.124705] bpf_trace_printk:   IP(src=0xc0a80116 dst=0xc0a80102 proto=6)
+[   15.124708] bpf_trace_printk:     TCP(sport=11011 dport=80 flags=0x2)
+[   15.124711] bpf_trace_printk: SYN cookie generated: client c0a80116 -> cookie 5c9e3a7d
+
+[   15.124755] bpf_trace_printk: Ether(proto=0x800)
+[   15.124759] bpf_trace_printk:   IP(src=0xc0a80117 dst=0xc0a80102 proto=6)
+[   15.124762] bpf_trace_printk:     TCP(sport=22022 dport=443 flags=0x2)
+[   15.124765] bpf_trace_printk: SYN cookie generated: client c0a80117 -> cookie 2d7e9a4c
+
+
+[   15.123456] bpf_trace_printk: Ether(proto=0x800)
+[   15.123459] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123462] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x2)
+[   15.123465] bpf_trace_printk: SYN cookie generated: client c0a80101 -> cookie 8a3f2b1c
+
+[   15.123512] bpf_trace_printk: Ether(proto=0x800)
+[   15.123516] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.123519] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x2)
+[   15.123522] bpf_trace_printk: SYN cookie generated: client c0a80103 -> cookie 4e9d7a5f
+
+[   15.123567] bpf_trace_printk: Ether(proto=0x800)
+[   15.123571] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.123574] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x2)
+[   15.123577] bpf_trace_printk: SYN cookie generated: client c0a80104 -> cookie b72c8d3e
+
+[   15.123621] bpf_trace_printk: Ether(proto=0x800)
+[   15.123625] bpf_trace_printk:   IP(src=0xc0a80105 dst=0xc0a80102 proto=6)
+[   15.123628] bpf_trace_printk:     TCP(sport=22222 dport=80 flags=0x2)
+[   15.123631] bpf_trace_printk: SYN cookie generated: client c0a80105 -> cookie 1f4e9c7a
+
+[   15.123675] bpf_trace_printk: Ether(proto=0x800)
+[   15.123679] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123682] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x10)
+[   15.123685] bpf_trace_printk: VALID cookie for client c0a80101
+
+[   15.123729] bpf_trace_printk: Ether(proto=0x800)
+[   15.123733] bpf_trace_printk:   IP(src=0xc0a80106 dst=0xc0a80102 proto=6)
+[   15.123736] bpf_trace_printk:     TCP(sport=33333 dport=80 flags=0x2)
+[   15.123739] bpf_trace_printk: SYN cookie generated: client c0a80106 -> cookie 9e2a5d7b
+
+[   15.123783] bpf_trace_printk: Ether(proto=0x800)
+[   15.123787] bpf_trace_printk:   IP(src=0xc0a80107 dst=0xc0a80102 proto=6)
+[   15.123790] bpf_trace_printk:     TCP(sport=44444 dport=443 flags=0x2)
+[   15.123793] bpf_trace_printk: SYN cookie generated: client c0a80107 -> cookie 3d6a8f2c
+
+[   15.123837] bpf_trace_printk: Ether(proto=0x800)
+[   15.123841] bpf_trace_printk:   IP(src=0xc0a80108 dst=0xc0a80102 proto=6)
+[   15.123844] bpf_trace_printk:     TCP(sport=55555 dport=80 flags=0x2)
+[   15.123847] bpf_trace_printk: SYN cookie generated: client c0a80108 -> cookie 8c7e1a4d
+
+[   15.123891] bpf_trace_printk: Ether(proto=0x800)
+[   15.123895] bpf_trace_printk:   IP(src=0xc0a80109 dst=0xc0a80102 proto=6)
+[   15.123898] bpf_trace_printk:     TCP(sport=66666 dport=8080 flags=0x2)
+[   15.123901] bpf_trace_printk: SYN cookie generated: client c0a80109 -> cookie 5f9b3c2e
+
+[   15.123945] bpf_trace_printk: Ether(proto=0x800)
+[   15.123949] bpf_trace_printk:   IP(src=0xc0a8010a dst=0xc0a80102 proto=6)
+[   15.123952] bpf_trace_printk:     TCP(sport=77777 dport=80 flags=0x2)
+[   15.123955] bpf_trace_printk: SYN cookie generated: client c0a8010a -> cookie 2a7d4e9f
+
+[   15.123999] bpf_trace_printk: Ether(proto=0x800)
+[   15.124003] bpf_trace_printk:   IP(src=0xc0a8010b dst=0xc0a80102 proto=6)
+[   15.124006] bpf_trace_printk:     TCP(sport=88888 dport=443 flags=0x2)
+[   15.124009] bpf_trace_printk: SYN cookie generated: client c0a8010b -> cookie 7c3e1a5d
+
+[   15.124053] bpf_trace_printk: Ether(proto=0x800)
+[   15.124057] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.124060] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x10)
+[   15.124063] bpf_trace_printk: VALID cookie for client c0a80103
+
+[   15.124107] bpf_trace_printk: Ether(proto=0x800)
+[   15.124111] bpf_trace_printk:   IP(src=0xc0a8010c dst=0xc0a80102 proto=6)
+[   15.124114] bpf_trace_printk:     TCP(sport=99999 dport=80 flags=0x2)
+[   15.124117] bpf_trace_printk: SYN cookie generated: client c0a8010c -> cookie 4a8d2f7e
+
+[   15.124161] bpf_trace_printk: Ether(proto=0x800)
+[   15.124165] bpf_trace_printk:   IP(src=0xc0a8010d dst=0xc0a80102 proto=6)
+[   15.124168] bpf_trace_printk:     TCP(sport=10101 dport=8080 flags=0x2)
+[   15.124171] bpf_trace_printk: SYN cookie generated: client c0a8010d -> cookie 9b5c3e2a
+
+[   15.124215] bpf_trace_printk: Ether(proto=0x800)
+[   15.124219] bpf_trace_printk:   IP(src=0xc0a8010e dst=0xc0a80102 proto=6)
+[   15.124222] bpf_trace_printk:     TCP(sport=20202 dport=80 flags=0x2)
+[   15.124225] bpf_trace_printk: SYN cookie generated: client c0a8010e -> cookie 3d7a9c4e
+
+[   15.124269] bpf_trace_printk: Ether(proto=0x800)
+[   15.124273] bpf_trace_printk:   IP(src=0xc0a8010f dst=0xc0a80102 proto=6)
+[   15.124276] bpf_trace_printk:     TCP(sport=30303 dport=443 flags=0x2)
+[   15.124279] bpf_trace_printk: SYN cookie generated: client c0a8010f -> cookie 8e4b1d7a
+
+[   15.124323] bpf_trace_printk: Ether(proto=0x800)
+[   15.124327] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.124330] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x10)
+[   15.124333] bpf_trace_printk: INVALID cookie for client c0a80104 - DROPPING
+
+[   15.124377] bpf_trace_printk: Ether(proto=0x800)
+[   15.124381] bpf_trace_printk:   IP(src=0xc0a80110 dst=0xc0a80102 proto=6)
+[   15.124384] bpf_trace_printk:     TCP(sport=40404 dport=80 flags=0x2)
+[   15.124387] bpf_trace_printk: SYN cookie generated: client c0a80110 -> cookie 1c5e9a3d
+
+[   15.124431] bpf_trace_printk: Ether(proto=0x800)
+[   15.124435] bpf_trace_printk:   IP(src=0xc0a80111 dst=0xc0a80102 proto=6)
+[   15.124438] bpf_trace_printk:     TCP(sport=50505 dport=8080 flags=0x2)
+[   15.124441] bpf_trace_printk: SYN cookie generated: client c0a80111 -> cookie 7a2d4e9c
+
+[   15.124485] bpf_trace_printk: Ether(proto=0x800)
+[   15.124489] bpf_trace_printk:   IP(src=0xc0a80112 dst=0xc0a80102 proto=6)
+[   15.124492] bpf_trace_printk:     TCP(sport=60606 dport=80 flags=0x2)
+[   15.124495] bpf_trace_printk: SYN cookie generated: client c0a80112 -> cookie 4b9c3e7a
+
+[   15.124539] bpf_trace_printk: Ether(proto=0x800)
+[   15.124543] bpf_trace_printk:   IP(src=0xc0a80113 dst=0xc0a80102 proto=6)
+[   15.124546] bpf_trace_printk:     TCP(sport=70707 dport=443 flags=0x2)
+[   15.124549] bpf_trace_printk: SYN cookie generated: client c0a80113 -> cookie 9d2a7c5e
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.124647] bpf_trace_printk: Ether(proto=0x800)
+[   15.124651] bpf_trace_printk:   IP(src=0xc0a80115 dst=0xc0a80102 proto=6)
+[   15.124654] bpf_trace_printk:     TCP(sport=90909 dport=8080 flags=0x2)
+[   15.124657] bpf_trace_printk: SYN cookie generated: client c0a80115 -> cookie 8a7c4d2e
+
+[   15.124701] bpf_trace_printk: Ether(proto=0x800)
+[   15.124705] bpf_trace_printk:   IP(src=0xc0a80116 dst=0xc0a80102 proto=6)
+[   15.124708] bpf_trace_printk:     TCP(sport=11011 dport=80 flags=0x2)
+[   15.124711] bpf_trace_printk: SYN cookie generated: client c0a80116 -> cookie 5c9e3a7d
+
+[   15.124755] bpf_trace_printk: Ether(proto=0x800)
+[   15.124759] bpf_trace_printk:   IP(src=0xc0a80117 dst=0xc0a80102 proto=6)
+[   15.124762] bpf_trace_printk:     TCP(sport=22022 dport=443 flags=0x2)
+[   15.124765] bpf_trace_printk: SYN cookie generated: client c0a80117 -> cookie 2d7e9a4c
+
+
+[   15.123456] bpf_trace_printk: Ether(proto=0x800)
+[   15.123459] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123462] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x2)
+[   15.123465] bpf_trace_printk: SYN cookie generated: client c0a80101 -> cookie 8a3f2b1c
+
+[   15.123512] bpf_trace_printk: Ether(proto=0x800)
+[   15.123516] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.123519] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x2)
+[   15.123522] bpf_trace_printk: SYN cookie generated: client c0a80103 -> cookie 4e9d7a5f
+
+[   15.123567] bpf_trace_printk: Ether(proto=0x800)
+[   15.123571] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.123574] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x2)
+[   15.123577] bpf_trace_printk: SYN cookie generated: client c0a80104 -> cookie b72c8d3e
+
+[   15.123621] bpf_trace_printk: Ether(proto=0x800)
+[   15.123625] bpf_trace_printk:   IP(src=0xc0a80105 dst=0xc0a80102 proto=6)
+[   15.123628] bpf_trace_printk:     TCP(sport=22222 dport=80 flags=0x2)
+[   15.123631] bpf_trace_printk: SYN cookie generated: client c0a80105 -> cookie 1f4e9c7a
+
+[   15.123675] bpf_trace_printk: Ether(proto=0x800)
+[   15.123679] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123682] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x10)
+[   15.123685] bpf_trace_printk: VALID cookie for client c0a80101
+
+[   15.123729] bpf_trace_printk: Ether(proto=0x800)
+[   15.123733] bpf_trace_printk:   IP(src=0xc0a80106 dst=0xc0a80102 proto=6)
+[   15.123736] bpf_trace_printk:     TCP(sport=33333 dport=80 flags=0x2)
+[   15.123739] bpf_trace_printk: SYN cookie generated: client c0a80106 -> cookie 9e2a5d7b
+
+[   15.123783] bpf_trace_printk: Ether(proto=0x800)
+[   15.123787] bpf_trace_printk:   IP(src=0xc0a80107 dst=0xc0a80102 proto=6)
+[   15.123790] bpf_trace_printk:     TCP(sport=44444 dport=443 flags=0x2)
+[   15.123793] bpf_trace_printk: SYN cookie generated: client c0a80107 -> cookie 3d6a8f2c
+
+[   15.123837] bpf_trace_printk: Ether(proto=0x800)
+[   15.123841] bpf_trace_printk:   IP(src=0xc0a80108 dst=0xc0a80102 proto=6)
+[   15.123844] bpf_trace_printk:     TCP(sport=55555 dport=80 flags=0x2)
+[   15.123847] bpf_trace_printk: SYN cookie generated: client c0a80108 -> cookie 8c7e1a4d
+
+[   15.123891] bpf_trace_printk: Ether(proto=0x800)
+[   15.123895] bpf_trace_printk:   IP(src=0xc0a80109 dst=0xc0a80102 proto=6)
+[   15.123898] bpf_trace_printk:     TCP(sport=66666 dport=8080 flags=0x2)
+[   15.123901] bpf_trace_printk: SYN cookie generated: client c0a80109 -> cookie 5f9b3c2e
+
+[   15.123945] bpf_trace_printk: Ether(proto=0x800)
+[   15.123949] bpf_trace_printk:   IP(src=0xc0a8010a dst=0xc0a80102 proto=6)
+[   15.123952] bpf_trace_printk:     TCP(sport=77777 dport=80 flags=0x2)
+[   15.123955] bpf_trace_printk: SYN cookie generated: client c0a8010a -> cookie 2a7d4e9f
+
+[   15.123999] bpf_trace_printk: Ether(proto=0x800)
+[   15.124003] bpf_trace_printk:   IP(src=0xc0a8010b dst=0xc0a80102 proto=6)
+[   15.124006] bpf_trace_printk:     TCP(sport=88888 dport=443 flags=0x2)
+[   15.124009] bpf_trace_printk: SYN cookie generated: client c0a8010b -> cookie 7c3e1a5d
+
+[   15.124053] bpf_trace_printk: Ether(proto=0x800)
+[   15.124057] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.124060] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x10)
+[   15.124063] bpf_trace_printk: VALID cookie for client c0a80103
+
+[   15.124107] bpf_trace_printk: Ether(proto=0x800)
+[   15.124111] bpf_trace_printk:   IP(src=0xc0a8010c dst=0xc0a80102 proto=6)
+[   15.124114] bpf_trace_printk:     TCP(sport=99999 dport=80 flags=0x2)
+[   15.124117] bpf_trace_printk: SYN cookie generated: client c0a8010c -> cookie 4a8d2f7e
+
+[   15.124161] bpf_trace_printk: Ether(proto=0x800)
+[   15.124165] bpf_trace_printk:   IP(src=0xc0a8010d dst=0xc0a80102 proto=6)
+[   15.124168] bpf_trace_printk:     TCP(sport=10101 dport=8080 flags=0x2)
+[   15.124171] bpf_trace_printk: SYN cookie generated: client c0a8010d -> cookie 9b5c3e2a
+
+[   15.124215] bpf_trace_printk: Ether(proto=0x800)
+[   15.124219] bpf_trace_printk:   IP(src=0xc0a8010e dst=0xc0a80102 proto=6)
+[   15.124222] bpf_trace_printk:     TCP(sport=20202 dport=80 flags=0x2)
+[   15.124225] bpf_trace_printk: SYN cookie generated: client c0a8010e -> cookie 3d7a9c4e
+
+[   15.124269] bpf_trace_printk: Ether(proto=0x800)
+[   15.124273] bpf_trace_printk:   IP(src=0xc0a8010f dst=0xc0a80102 proto=6)
+[   15.124276] bpf_trace_printk:     TCP(sport=30303 dport=443 flags=0x2)
+[   15.124279] bpf_trace_printk: SYN cookie generated: client c0a8010f -> cookie 8e4b1d7a
+
+[   15.124323] bpf_trace_printk: Ether(proto=0x800)
+[   15.124327] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.124330] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x10)
+[   15.124333] bpf_trace_printk: INVALID cookie for client c0a80104 - DROPPING
+
+[   15.124377] bpf_trace_printk: Ether(proto=0x800)
+[   15.124381] bpf_trace_printk:   IP(src=0xc0a80110 dst=0xc0a80102 proto=6)
+[   15.124384] bpf_trace_printk:     TCP(sport=40404 dport=80 flags=0x2)
+[   15.124387] bpf_trace_printk: SYN cookie generated: client c0a80110 -> cookie 1c5e9a3d
+
+[   15.124431] bpf_trace_printk: Ether(proto=0x800)
+[   15.124435] bpf_trace_printk:   IP(src=0xc0a80111 dst=0xc0a80102 proto=6)
+[   15.124438] bpf_trace_printk:     TCP(sport=50505 dport=8080 flags=0x2)
+[   15.124441] bpf_trace_printk: SYN cookie generated: client c0a80111 -> cookie 7a2d4e9c
+
+[   15.124485] bpf_trace_printk: Ether(proto=0x800)
+[   15.124489] bpf_trace_printk:   IP(src=0xc0a80112 dst=0xc0a80102 proto=6)
+[   15.124492] bpf_trace_printk:     TCP(sport=60606 dport=80 flags=0x2)
+[   15.124495] bpf_trace_printk: SYN cookie generated: client c0a80112 -> cookie 4b9c3e7a
+
+[   15.124539] bpf_trace_printk: Ether(proto=0x800)
+[   15.124543] bpf_trace_printk:   IP(src=0xc0a80113 dst=0xc0a80102 proto=6)
+[   15.124546] bpf_trace_printk:     TCP(sport=70707 dport=443 flags=0x2)
+[   15.124549] bpf_trace_printk: SYN cookie generated: client c0a80113 -> cookie 9d2a7c5e
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.124647] bpf_trace_printk: Ether(proto=0x800)
+[   15.124651] bpf_trace_printk:   IP(src=0xc0a80115 dst=0xc0a80102 proto=6)
+[   15.124654] bpf_trace_printk:     TCP(sport=90909 dport=8080 flags=0x2)
+[   15.124657] bpf_trace_printk: SYN cookie generated: client c0a80115 -> cookie 8a7c4d2e
+
+[   15.124701] bpf_trace_printk: Ether(proto=0x800)
+[   15.124705] bpf_trace_printk:   IP(src=0xc0a80116 dst=0xc0a80102 proto=6)
+[   15.124708] bpf_trace_printk:     TCP(sport=11011 dport=80 flags=0x2)
+[   15.124711] bpf_trace_printk: SYN cookie generated: client c0a80116 -> cookie 5c9e3a7d
+
+[   15.124755] bpf_trace_printk: Ether(proto=0x800)
+[   15.124759] bpf_trace_printk:   IP(src=0xc0a80117 dst=0xc0a80102 proto=6)
+[   15.124762] bpf_trace_printk:     TCP(sport=22022 dport=443 flags=0x2)
+[   15.124765] bpf_trace_printk: SYN cookie generated: client c0a80117 -> cookie 2d7e9a4c
+
+
+[   15.123456] bpf_trace_printk: Ether(proto=0x800)
+[   15.123459] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123462] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x2)
+[   15.123465] bpf_trace_printk: SYN cookie generated: client c0a80101 -> cookie 8a3f2b1c
+
+[   15.123512] bpf_trace_printk: Ether(proto=0x800)
+[   15.123516] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.123519] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x2)
+[   15.123522] bpf_trace_printk: SYN cookie generated: client c0a80103 -> cookie 4e9d7a5f
+
+[   15.123567] bpf_trace_printk: Ether(proto=0x800)
+[   15.123571] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.123574] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x2)
+[   15.123577] bpf_trace_printk: SYN cookie generated: client c0a80104 -> cookie b72c8d3e
+
+[   15.123621] bpf_trace_printk: Ether(proto=0x800)
+[   15.123625] bpf_trace_printk:   IP(src=0xc0a80105 dst=0xc0a80102 proto=6)
+[   15.123628] bpf_trace_printk:     TCP(sport=22222 dport=80 flags=0x2)
+[   15.123631] bpf_trace_printk: SYN cookie generated: client c0a80105 -> cookie 1f4e9c7a
+
+[   15.123675] bpf_trace_printk: Ether(proto=0x800)
+[   15.123679] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123682] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x10)
+[   15.123685] bpf_trace_printk: VALID cookie for client c0a80101
+
+[   15.123729] bpf_trace_printk: Ether(proto=0x800)
+[   15.123733] bpf_trace_printk:   IP(src=0xc0a80106 dst=0xc0a80102 proto=6)
+[   15.123736] bpf_trace_printk:     TCP(sport=33333 dport=80 flags=0x2)
+[   15.123739] bpf_trace_printk: SYN cookie generated: client c0a80106 -> cookie 9e2a5d7b
+
+[   15.123783] bpf_trace_printk: Ether(proto=0x800)
+[   15.123787] bpf_trace_printk:   IP(src=0xc0a80107 dst=0xc0a80102 proto=6)
+[   15.123790] bpf_trace_printk:     TCP(sport=44444 dport=443 flags=0x2)
+[   15.123793] bpf_trace_printk: SYN cookie generated: client c0a80107 -> cookie 3d6a8f2c
+
+[   15.123837] bpf_trace_printk: Ether(proto=0x800)
+[   15.123841] bpf_trace_printk:   IP(src=0xc0a80108 dst=0xc0a80102 proto=6)
+[   15.123844] bpf_trace_printk:     TCP(sport=55555 dport=80 flags=0x2)
+[   15.123847] bpf_trace_printk: SYN cookie generated: client c0a80108 -> cookie 8c7e1a4d
+
+[   15.123891] bpf_trace_printk: Ether(proto=0x800)
+[   15.123895] bpf_trace_printk:   IP(src=0xc0a80109 dst=0xc0a80102 proto=6)
+[   15.123898] bpf_trace_printk:     TCP(sport=66666 dport=8080 flags=0x2)
+[   15.123901] bpf_trace_printk: SYN cookie generated: client c0a80109 -> cookie 5f9b3c2e
+
+[   15.123945] bpf_trace_printk: Ether(proto=0x800)
+[   15.123949] bpf_trace_printk:   IP(src=0xc0a8010a dst=0xc0a80102 proto=6)
+[   15.123952] bpf_trace_printk:     TCP(sport=77777 dport=80 flags=0x2)
+[   15.123955] bpf_trace_printk: SYN cookie generated: client c0a8010a -> cookie 2a7d4e9f
+
+[   15.123999] bpf_trace_printk: Ether(proto=0x800)
+[   15.124003] bpf_trace_printk:   IP(src=0xc0a8010b dst=0xc0a80102 proto=6)
+[   15.124006] bpf_trace_printk:     TCP(sport=88888 dport=443 flags=0x2)
+[   15.124009] bpf_trace_printk: SYN cookie generated: client c0a8010b -> cookie 7c3e1a5d
+
+[   15.124053] bpf_trace_printk: Ether(proto=0x800)
+[   15.124057] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.124060] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x10)
+[   15.124063] bpf_trace_printk: VALID cookie for client c0a80103
+
+[   15.124107] bpf_trace_printk: Ether(proto=0x800)
+[   15.124111] bpf_trace_printk:   IP(src=0xc0a8010c dst=0xc0a80102 proto=6)
+[   15.124114] bpf_trace_printk:     TCP(sport=99999 dport=80 flags=0x2)
+[   15.124117] bpf_trace_printk: SYN cookie generated: client c0a8010c -> cookie 4a8d2f7e
+
+[   15.124161] bpf_trace_printk: Ether(proto=0x800)
+[   15.124165] bpf_trace_printk:   IP(src=0xc0a8010d dst=0xc0a80102 proto=6)
+[   15.124168] bpf_trace_printk:     TCP(sport=10101 dport=8080 flags=0x2)
+[   15.124171] bpf_trace_printk: SYN cookie generated: client c0a8010d -> cookie 9b5c3e2a
+
+[   15.124215] bpf_trace_printk: Ether(proto=0x800)
+[   15.124219] bpf_trace_printk:   IP(src=0xc0a8010e dst=0xc0a80102 proto=6)
+[   15.124222] bpf_trace_printk:     TCP(sport=20202 dport=80 flags=0x2)
+[   15.124225] bpf_trace_printk: SYN cookie generated: client c0a8010e -> cookie 3d7a9c4e
+
+[   15.124269] bpf_trace_printk: Ether(proto=0x800)
+[   15.124273] bpf_trace_printk:   IP(src=0xc0a8010f dst=0xc0a80102 proto=6)
+[   15.124276] bpf_trace_printk:     TCP(sport=30303 dport=443 flags=0x2)
+[   15.124279] bpf_trace_printk: SYN cookie generated: client c0a8010f -> cookie 8e4b1d7a
+
+[   15.124323] bpf_trace_printk: Ether(proto=0x800)
+[   15.124327] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.124330] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x10)
+[   15.124333] bpf_trace_printk: INVALID cookie for client c0a80104 - DROPPING
+
+[   15.124377] bpf_trace_printk: Ether(proto=0x800)
+[   15.124381] bpf_trace_printk:   IP(src=0xc0a80110 dst=0xc0a80102 proto=6)
+[   15.124384] bpf_trace_printk:     TCP(sport=40404 dport=80 flags=0x2)
+[   15.124387] bpf_trace_printk: SYN cookie generated: client c0a80110 -> cookie 1c5e9a3d
+
+[   15.124431] bpf_trace_printk: Ether(proto=0x800)
+[   15.124435] bpf_trace_printk:   IP(src=0xc0a80111 dst=0xc0a80102 proto=6)
+[   15.124438] bpf_trace_printk:     TCP(sport=50505 dport=8080 flags=0x2)
+[   15.124441] bpf_trace_printk: SYN cookie generated: client c0a80111 -> cookie 7a2d4e9c
+
+[   15.124485] bpf_trace_printk: Ether(proto=0x800)
+[   15.124489] bpf_trace_printk:   IP(src=0xc0a80112 dst=0xc0a80102 proto=6)
+[   15.124492] bpf_trace_printk:     TCP(sport=60606 dport=80 flags=0x2)
+[   15.124495] bpf_trace_printk: SYN cookie generated: client c0a80112 -> cookie 4b9c3e7a
+
+[   15.124539] bpf_trace_printk: Ether(proto=0x800)
+[   15.124543] bpf_trace_printk:   IP(src=0xc0a80113 dst=0xc0a80102 proto=6)
+[   15.124546] bpf_trace_printk:     TCP(sport=70707 dport=443 flags=0x2)
+[   15.124549] bpf_trace_printk: SYN cookie generated: client c0a80113 -> cookie 9d2a7c5e
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.124647] bpf_trace_printk: Ether(proto=0x800)
+[   15.124651] bpf_trace_printk:   IP(src=0xc0a80115 dst=0xc0a80102 proto=6)
+[   15.124654] bpf_trace_printk:     TCP(sport=90909 dport=8080 flags=0x2)
+[   15.124657] bpf_trace_printk: SYN cookie generated: client c0a80115 -> cookie 8a7c4d2e
+
+[   15.124701] bpf_trace_printk: Ether(proto=0x800)
+[   15.124705] bpf_trace_printk:   IP(src=0xc0a80116 dst=0xc0a80102 proto=6)
+[   15.124708] bpf_trace_printk:     TCP(sport=11011 dport=80 flags=0x2)
+[   15.124711] bpf_trace_printk: SYN cookie generated: client c0a80116 -> cookie 5c9e3a7d
+
+[   15.124755] bpf_trace_printk: Ether(proto=0x800)
+[   15.124759] bpf_trace_printk:   IP(src=0xc0a80117 dst=0xc0a80102 proto=6)
+[   15.124762] bpf_trace_printk:     TCP(sport=22022 dport=443 flags=0x2)
+[   15.124765] bpf_trace_printk: SYN cookie generated: client c0a80117 -> cookie 2d7e9a4c
+
+
+[   15.123456] bpf_trace_printk: Ether(proto=0x800)
+[   15.123459] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123462] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x2)
+[   15.123465] bpf_trace_printk: SYN cookie generated: client c0a80101 -> cookie 8a3f2b1c
+
+[   15.123512] bpf_trace_printk: Ether(proto=0x800)
+[   15.123516] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.123519] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x2)
+[   15.123522] bpf_trace_printk: SYN cookie generated: client c0a80103 -> cookie 4e9d7a5f
+
+[   15.123567] bpf_trace_printk: Ether(proto=0x800)
+[   15.123571] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.123574] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x2)
+[   15.123577] bpf_trace_printk: SYN cookie generated: client c0a80104 -> cookie b72c8d3e
+
+[   15.123621] bpf_trace_printk: Ether(proto=0x800)
+[   15.123625] bpf_trace_printk:   IP(src=0xc0a80105 dst=0xc0a80102 proto=6)
+[   15.123628] bpf_trace_printk:     TCP(sport=22222 dport=80 flags=0x2)
+[   15.123631] bpf_trace_printk: SYN cookie generated: client c0a80105 -> cookie 1f4e9c7a
+
+[   15.123675] bpf_trace_printk: Ether(proto=0x800)
+[   15.123679] bpf_trace_printk:   IP(src=0xc0a80101 dst=0xc0a80102 proto=6)
+[   15.123682] bpf_trace_printk:     TCP(sport=54321 dport=80 flags=0x10)
+[   15.123685] bpf_trace_printk: VALID cookie for client c0a80101
+
+[   15.123729] bpf_trace_printk: Ether(proto=0x800)
+[   15.123733] bpf_trace_printk:   IP(src=0xc0a80106 dst=0xc0a80102 proto=6)
+[   15.123736] bpf_trace_printk:     TCP(sport=33333 dport=80 flags=0x2)
+[   15.123739] bpf_trace_printk: SYN cookie generated: client c0a80106 -> cookie 9e2a5d7b
+
+[   15.123783] bpf_trace_printk: Ether(proto=0x800)
+[   15.123787] bpf_trace_printk:   IP(src=0xc0a80107 dst=0xc0a80102 proto=6)
+[   15.123790] bpf_trace_printk:     TCP(sport=44444 dport=443 flags=0x2)
+[   15.123793] bpf_trace_printk: SYN cookie generated: client c0a80107 -> cookie 3d6a8f2c
+
+[   15.123837] bpf_trace_printk: Ether(proto=0x800)
+[   15.123841] bpf_trace_printk:   IP(src=0xc0a80108 dst=0xc0a80102 proto=6)
+[   15.123844] bpf_trace_printk:     TCP(sport=55555 dport=80 flags=0x2)
+[   15.123847] bpf_trace_printk: SYN cookie generated: client c0a80108 -> cookie 8c7e1a4d
+
+[   15.123891] bpf_trace_printk: Ether(proto=0x800)
+[   15.123895] bpf_trace_printk:   IP(src=0xc0a80109 dst=0xc0a80102 proto=6)
+[   15.123898] bpf_trace_printk:     TCP(sport=66666 dport=8080 flags=0x2)
+[   15.123901] bpf_trace_printk: SYN cookie generated: client c0a80109 -> cookie 5f9b3c2e
+
+[   15.123945] bpf_trace_printk: Ether(proto=0x800)
+[   15.123949] bpf_trace_printk:   IP(src=0xc0a8010a dst=0xc0a80102 proto=6)
+[   15.123952] bpf_trace_printk:     TCP(sport=77777 dport=80 flags=0x2)
+[   15.123955] bpf_trace_printk: SYN cookie generated: client c0a8010a -> cookie 2a7d4e9f
+
+[   15.123999] bpf_trace_printk: Ether(proto=0x800)
+[   15.124003] bpf_trace_printk:   IP(src=0xc0a8010b dst=0xc0a80102 proto=6)
+[   15.124006] bpf_trace_printk:     TCP(sport=88888 dport=443 flags=0x2)
+[   15.124009] bpf_trace_printk: SYN cookie generated: client c0a8010b -> cookie 7c3e1a5d
+
+[   15.124053] bpf_trace_printk: Ether(proto=0x800)
+[   15.124057] bpf_trace_printk:   IP(src=0xc0a80103 dst=0xc0a80102 proto=6)
+[   15.124060] bpf_trace_printk:     TCP(sport=12345 dport=443 flags=0x10)
+[   15.124063] bpf_trace_printk: VALID cookie for client c0a80103
+
+[   15.124107] bpf_trace_printk: Ether(proto=0x800)
+[   15.124111] bpf_trace_printk:   IP(src=0xc0a8010c dst=0xc0a80102 proto=6)
+[   15.124114] bpf_trace_printk:     TCP(sport=99999 dport=80 flags=0x2)
+[   15.124117] bpf_trace_printk: SYN cookie generated: client c0a8010c -> cookie 4a8d2f7e
+
+[   15.124161] bpf_trace_printk: Ether(proto=0x800)
+[   15.124165] bpf_trace_printk:   IP(src=0xc0a8010d dst=0xc0a80102 proto=6)
+[   15.124168] bpf_trace_printk:     TCP(sport=10101 dport=8080 flags=0x2)
+[   15.124171] bpf_trace_printk: SYN cookie generated: client c0a8010d -> cookie 9b5c3e2a
+
+[   15.124215] bpf_trace_printk: Ether(proto=0x800)
+[   15.124219] bpf_trace_printk:   IP(src=0xc0a8010e dst=0xc0a80102 proto=6)
+[   15.124222] bpf_trace_printk:     TCP(sport=20202 dport=80 flags=0x2)
+[   15.124225] bpf_trace_printk: SYN cookie generated: client c0a8010e -> cookie 3d7a9c4e
+
+[   15.124269] bpf_trace_printk: Ether(proto=0x800)
+[   15.124273] bpf_trace_printk:   IP(src=0xc0a8010f dst=0xc0a80102 proto=6)
+[   15.124276] bpf_trace_printk:     TCP(sport=30303 dport=443 flags=0x2)
+[   15.124279] bpf_trace_printk: SYN cookie generated: client c0a8010f -> cookie 8e4b1d7a
+
+[   15.124323] bpf_trace_printk: Ether(proto=0x800)
+[   15.124327] bpf_trace_printk:   IP(src=0xc0a80104 dst=0xc0a80102 proto=6)
+[   15.124330] bpf_trace_printk:     TCP(sport=65321 dport=8080 flags=0x10)
+[   15.124333] bpf_trace_printk: INVALID cookie for client c0a80104 - DROPPING
+
+[   15.124377] bpf_trace_printk: Ether(proto=0x800)
+[   15.124381] bpf_trace_printk:   IP(src=0xc0a80110 dst=0xc0a80102 proto=6)
+[   15.124384] bpf_trace_printk:     TCP(sport=40404 dport=80 flags=0x2)
+[   15.124387] bpf_trace_printk: SYN cookie generated: client c0a80110 -> cookie 1c5e9a3d
+
+[   15.124431] bpf_trace_printk: Ether(proto=0x800)
+[   15.124435] bpf_trace_printk:   IP(src=0xc0a80111 dst=0xc0a80102 proto=6)
+[   15.124438] bpf_trace_printk:     TCP(sport=50505 dport=8080 flags=0x2)
+[   15.124441] bpf_trace_printk: SYN cookie generated: client c0a80111 -> cookie 7a2d4e9c
+
+[   15.124485] bpf_trace_printk: Ether(proto=0x800)
+[   15.124489] bpf_trace_printk:   IP(src=0xc0a80112 dst=0xc0a80102 proto=6)
+[   15.124492] bpf_trace_printk:     TCP(sport=60606 dport=80 flags=0x2)
+[   15.124495] bpf_trace_printk: SYN cookie generated: client c0a80112 -> cookie 4b9c3e7a
+
+[   15.124539] bpf_trace_printk: Ether(proto=0x800)
+[   15.124543] bpf_trace_printk:   IP(src=0xc0a80113 dst=0xc0a80102 proto=6)
+[   15.124546] bpf_trace_printk:     TCP(sport=70707 dport=443 flags=0x2)
+[   15.124549] bpf_trace_printk: SYN cookie generated: client c0a80113 -> cookie 9d2a7c5e
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.124647] bpf_trace_printk: Ether(proto=0x800)
+[   15.124651] bpf_trace_printk:   IP(src=0xc0a80115 dst=0xc0a80102 proto=6)
+[   15.124654] bpf_trace_printk:     TCP(sport=90909 dport=8080 flags=0x2)
+[   15.124657] bpf_trace_printk: SYN cookie generated: client c0a80115 -> cookie 8a7c4d2e
+
+[   15.124701] bpf_trace_printk: Ether(proto=0x800)
+[   15.124705] bpf_trace_printk:   IP(src=0xc0a80116 dst=0xc0a80102 proto=6)
+[   15.124708] bpf_trace_printk:     TCP(sport=11011 dport=80 flags=0x2)
+[   15.124711] bpf_trace_printk: SYN cookie generated: client c0a80116 -> cookie 5c9e3a7d
+
+[   15.124755] bpf_trace_printk: Ether(proto=0x800)
+[   15.124759] bpf_trace_printk:   IP(src=0xc0a80117 dst=0xc0a80102 proto=6)
+[   15.124762] bpf_trace_printk:     TCP(sport=22022 dport=443 flags=0x2)
+[   15.124765] bpf_trace_printk: SYN cookie generated: client c0a80117 -> cookie 2d7e9a4c
+

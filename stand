@@ -1,0 +1,88 @@
+#!/bin/sh
+
+[ $# -ge 1 ] || { echo >&2 "Usage: $0 {up|down|status|attach|detach|log|exec|listen}"; exit 1; }
+[ $UID -eq 0 ] || { echo >&2 "This script requires root."; exit 1; }
+
+action="$1"
+netns=xdp-test
+local=xdp-local
+remote=xdp-remote
+dummy=xdp_dummy.o
+filter=xdp_filter.o
+ATTACK_PID_FILE="/tmp/xdp_attack_pid"
+
+case "$action" in
+up)
+    ip netns add ${netns}
+    ip link add ${remote} type veth peer name ${local}
+    ip link set ${remote} netns ${netns}
+    ip netns exec ${netns} ip address add 192.0.2.2/24 dev ${remote}
+    ip netns exec ${netns} ip link set ${remote} up
+    ip address add 192.0.2.1/24 dev ${local}
+    ip link set ${local} up
+    ;;
+
+down)
+    ip netns delete ${netns}
+    ip link delete ${local}
+    ;;
+
+status)
+    if ip netns list | grep ${netns} 2>&1 >/dev/null; then
+        echo "Stand is UP."
+    else
+        echo "Stand is DOWN."
+    fi
+    ;;
+
+attach)
+    ip netns exec ${netns} ip -force link set dev ${remote} xdp object ${dummy} >/dev/null
+    ip -force link set dev ${local} xdp object ${filter} verbose
+    ;;
+
+detach)
+    ip netns exec ${netns} ip link set dev ${remote} xdp off
+    ip link set dev ${local} xdp off
+    ;;
+
+log)
+    echo -n 1 > /sys/kernel/debug/tracing/options/trace_printk
+    cat /sys/kernel/debug/tracing/trace_pipe
+    ;;
+
+log1)
+    cat sys.txt
+    ;;
+
+log2)
+    cat ss.txt
+    ;;
+
+exec)
+    shift
+    ip netns exec ${netns} $@
+    ;;
+
+attack)
+    ip netns exec ${netns} pkill -9 -f "../static-http-server/nonblock/server" 2>/dev/null || true
+    ip netns exec ${netns} sh -c '
+        while true; do
+            printf "HTTP/1.1 429 Too Many Requests\r\n"
+            printf "Content-Type: text/html\r\n"
+            printf "Connection: close\r\n"
+            printf "\r\n"
+            printf "<html><body><h1>429 Too Many Requests</h1></body></html>\r\n"
+        done | nc -l -p 80 -s 192.0.2.2
+    ' >/dev/null 2>&1 &
+
+    echo $! > "$ATTACK_PID_FILE"
+    ;;
+
+xdp)
+    ip netns exec ${netns} ../static-http-server/nonblock/server &
+    ;;
+
+listen)
+    ip netns exec ${netns} tcpdump -tnevi ${remote} not ip6
+    ;;
+esac

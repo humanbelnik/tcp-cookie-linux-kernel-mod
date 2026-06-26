@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая работа - HTTP Сервер</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-card li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .feature-card li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .arch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .arch-item {
+            background: #e8f4fd;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.9rem;
+            border: 1px solid #b8dcff;
+        }
+
+        .qa-section {
+            background: #fff3cd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .qa-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .qa-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .question {
+            font-weight: 600;
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+
+        .answer {
+            color: #666;
+        }
+
+        .requirements {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .requirements li {
+            padding: 0.4rem 0;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .requirements li:before {
+            content: "✓";
+            color: #28a745;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 1.5rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Курсовая работа по дисциплине "Компьютерные сети"</h1>
+            <div class="subtitle">Разработка высокопроизводительного HTTP сервера для отдачи статического содержимого</div>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>Техническое задание</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Функциональные требования</h3>
+                        <ul>
+                            <li>Поддержка GET и HEAD запросов</li>
+                            <li>HTTP статусы: 200, 403, 404, 405</li>
+                            <li>Файлы до 128 Мбайт</li>
+                            <li>Мультиплексирование соединений</li>
+                            <li>Встроенная HTML страница</li>
+                            <li>Журналирование событий</li>
+                            <li>Минимальные требования безопасности</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Нагрузочное тестирование</h3>
+                        <ul>
+                            <li>Максимальное количество соединений</li>
+                            <li>Скорость отдачи данных на соединение</li>
+                            <li>Совокупная пропускная способность</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Варианты архитектуры</h2>
+                <div class="arch-grid">
+                    <div class="arch-item">thread pool + select()</div>
+                    <div class="arch-item">prefork + select()</div>
+                    <div class="arch-item">thread pool + pselect()</div>
+                    <div class="arch-item">prefork + pselect()</div>
+                    <div class="arch-item">thread pool + poll()</div>
+                    <div class="arch-item">prefork + poll()</div>
+                    <div class="arch-item">thread pool + epoll()</div>
+                    <div class="arch-item">prefork + epoll()</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Оформление работы</h2>
+                <div class="requirements">
+                    <ul>
+                        <li>Расчётно-пояснительная записка на 12-32 листах А4</li>
+                        <li>Презентация к курсовой работе на 8-16 слайдах</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Вопросы и ответы</h2>
+                <div class="qa-section">
+                    <div class="qa-item">
+                        <div class="question">Какую операционную систему использовать?</div>
+                        <div class="answer">Систему с поддержкой fork(), select(), pselect(), poll(), epoll() - любой современный Linux или *BSD системы</div>
+                    </div>
+                    
+                    <div class="qa-item">
+                        <div class="question">На каком языке программирования писать?</div>
+                        <div class="answer">Языки с доступом к системным вызовам: C, C++, Swift, Rust. Высокоуровневые фреймворки запрещены</div>
+                    </div>
+                    
+                    <div class="qa-item">
+                        <div class="question">Какие библиотеки можно использовать?</div>
+                        <div class="answer">Стандартная библиотека языка. Дополнительные библиотеки - только с разрешения руководителя</div>
+                    </div>
+                    
+                    <div class="qa-item">
+                        <div class="question">Какие есть материалы по теме?</div>
+                        <div class="answer">Книга А.В. Столярова, The Linux Programming Interface, man-страницы Linux</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Курсовая работа по компьютерным сетям | HTTP Сервер статического содержимого</p>
+        </footer>
+    </div>
+</body>
+</html>

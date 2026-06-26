@@ -1,0 +1,17 @@
+
+[   15.124593] bpf_trace_printk: Ether(proto=0x800)
+[   15.124597] bpf_trace_printk:   IP(src=0xc0a80114 dst=0xc0a80102 proto=6)
+[   15.124600] bpf_trace_printk:     TCP(sport=80808 dport=80 flags=0x2)
+[   15.124603] bpf_trace_printk: SYN cookie generated: client c0a80114 -> cookie 3e8c5a7d
+
+[   15.235697] bpf_trace_printk:   FourTuple: saddr=c0a80114 daddr=c0a80102 sport=80808 dport=80
+[   15.235700] bpf_trace_printk:   seq из ACK: 0x8f3c2a1d 
+[   15.235703] bpf_trace_printk:   cookie из ACK: 0x3e8c5a7d 
+[   15.235712] bpf_trace_printk:   seed=42, daddr<<32|saddr=0xc0a8010200000000|c0a80114
+[   15.235715] bpf_trace_printk:   hash_crc32(0xc0a80114c0a80102, 42) = 0x4a8d3e7c
+[   15.235718] bpf_trace_printk:   dport<<48|seqnum<<16|sport=0x005000008f3c2a1d13b8
+[   15.235721] bpf_trace_printk:   hash_crc32(0x005000008f3c2a1d13b8, 0x4a8d3e7c) = 0x9b5c3e2a
+[   15.235724] bpf_trace_printk:   hb = 0x9b5c3e2a
+[   15.235727] bpf_trace_printk:   cookie - seqnum = 0x3e8c5a7d - 0x8f3c2a1d = 0xaf503060
+[   15.235730] bpf_trace_printk:   hash_crc32(count, hb) = hash_crc32(12345, 0x9b5c3e2a)
+[   15.235733] bpf_trace_printk:   0xaf503060 TX_PASS
